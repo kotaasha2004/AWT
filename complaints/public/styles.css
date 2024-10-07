@@ -1,0 +1,266 @@
+
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #7db0de;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color:#1d5c96;
+        color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .button-container {
+        display: flex;
+        align-items: center;
+        gap: 15px; 
+    }
+
+      .add-complaint-btn {
+        background-color:#08313dcc;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .home{
+        background-color:#08313dcc;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-right:0;
+      }
+
+      a{
+        text-decoration:none;
+      }
+
+      .add-complaint-btn:hover {
+        background-color:#63c5bbcc;
+
+      }
+      .home:hover {
+        background-color:#63c5bbcc;
+
+      }
+      
+      .add-complaint-btn:active{
+        background-color: #1e7e34;
+        transform: scale(0.98);
+      }
+      .home:active{
+        background-color: #1e7e34;
+        transform: scale(0.98);
+      }
+
+      .add-complaint-btn:focus {
+        outline: none;
+      }
+      .home:focus {
+        outline: none;
+      }
+
+
+
+      .filter-container {
+        text-align: center;
+      }
+
+      .filter-label {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+
+      .filter-select {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #1d5c96;
+        border-radius: 10px;
+        background-color: #fff;
+        color: #333;
+        width: 250px;
+        transition: border-color 0.3s ease;
+      }
+      
+      
+
+      .filter-select:focus {
+        border-color: #63c5bbcc;
+        outline: none;
+      }
+  a{
+    text-decoration:none;
+  }
+
+  .add-complaint-btn:hover {
+    background-color:#63c5bbcc;
+
+  }
+
+  .add-complaint-btn:active {
+    background-color: #1e7e34;
+    transform: scale(0.98);
+  }
+
+  .add-complaint-btn:focus {
+    outline: none;
+  }
+
+
+  .filter-container {
+    text-align: center;
+  }
+
+  .filter-label {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .filter-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #1d5c96;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    width: 250px;
+    transition: border-color 0.3s ease;
+  }
+
+  .filter-select:focus {
+    border-color: #63c5bbcc;
+    outline: none;
+  }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px;
+}
+
+.card {
+    background-color:white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #2980b9;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.submit-button {
+    background-color: #2980b9;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #1f6391;
+    transform: scale(1.05);
+}
+
+.btn-like-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-component {
+    display: flex;
+    align-items: center;
+}
+
+.like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #2980b9;
+    font-size: 22px;
+    transition: color 0.3s;
+}
+
+.like-btn:hover {
+    color: #1f6391;
+}
+
+.counter {
+    font-size: 16px;
+    color: #555;
+    margin-left: 10px;
+}
+
+/* Delete Button Positioning */
+.delete-btn-container {
+    position: absolute;
+    top: 15px;
+    color: #333;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.material-symbols-outlined.bin {
+    color: #555;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+.material-symbols-outlined.bin:hover {
+    transform: scale(1.2);
+    color: #d74c4c; /* Optional hover effect for delete */
+}
+
+/* Card Head Styling */
+.card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
